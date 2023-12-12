@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>35 MM</title>
+<link rel="stylesheet" href="static/styles/style.css">
+<script src="script.js" defer></script>
+<link rel="icon" href="D:/Cinema/myProj1/static/images/cinema_head.png" type="image/png">
+
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+    </style>
+
+    <div class="header">
+        <img class="header_image" src="D:\Cinema\myProj1\static\images\cinema_head.png" alt="" width="198" height="100">
+        <div class="header_text">
+            Таганрог, улица Чехова 515 <span>&nbsp | &nbsp</span> +7 (863) 444 55 66
+        </div>
+    </div>
+
+    <nav class="menu">
+        <a class="menu_a" href="index.html">РАСПИСАНИЕ</a>
+        <span class="pink_trait"> &nbsp | &nbsp </span>
+        <a class="menu_a" href="films.html">ФИЛЬМЫ</a>
+        <span class="pink_trait"> &nbsp | &nbsp </span>
+        <a class="menu_a" href="about.html">О КИНОТЕАТРЕ</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <h1 class="header_timetable">
+        РАСПИСАНИЕ
+    </h1>
+
+    <nav class="time_menu">
+        <a class="link" href="index.html">13.05</a>
+        <a class="link" href="date14.html">14.05</a>
+        <a class="link" href="date15.html">15.05</a>
+        <a class="link" href="date16.html">16.05</a>
+        <a class="link" href="date17.html">17.05</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <div class="border">
+        <p class="border1">
+            -----------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+
+        <!-- <p class="film1" href="films.html"> ДЕВЯТАЕВ </p> -->
+        <a class="film1" href="films.html#section1"> ДЕВЯТАЕВ </a>
+        <button id="open_1520">15:20</button>
+        <button id="open_1940">19:40</button>
+
+        <p class="border2">
+            -----------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+
+        <a class="film2" href="films.html#section2"> БАРБИ </a>
+        <button id="open_2115">21:15</button>
+
+
+
+        <p class="border3">
+            -----------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+
+        <a class="film3" href="films.html#section3"> НЕВИДИМЫЙ ГОСТЬ </a>
+        <button id="open_1330">13:30</button>
+
+        <div id="modal1" class="modal">
+            <div class="modal__main">
+                <h2 class="modal_title">Девятаев, 15:20 </h2>
+                <div id="seatsContainer"></div>
+                <button onclick="bookSeats()">Забронировать</button>
+                <button class="modal__close">&#10006</button>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal__main">
+                <h2 class="modal_title">Девятаев, 19:40 </h2>
+                <div id="seatsContainer"></div>
+                <button onclick="bookSeats()">Забронировать</button>
+                <button class="modal__close">&#10006</button>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal__main">
+                <h2 class="modal_title">Барби, 21:15 </h2>
+                <div id="seatsContainer"></div>
+                <button onclick="bookSeats()">Забронировать</button>
+                <button class="modal__close">&#10006</button>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal__main">
+                <h2 class="modal_title">Невидимый гость, 13:30 </h2>
+                <div id="seatsContainer"></div>
+                <button onclick="bookSeats()">Забронировать</button>
+                <button class="modal__close">&#10006</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="header_text">
+                Мы ждём Вас с 8:00 до 00:00 ежедневно <span>&nbsp | &nbsp</span> Ваш 35 mm
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+
+
 const buttonElem1 = document.querySelector('#open_1520');
 const modalElem1 = document.querySelector('#modal1');
 
@@ -150,4 +152,22 @@ for (var i = 1; i <= 50; i++) {
   };
   seatsContainer4.appendChild(seat);
 
+}
+
+function authenticate() {
+  event.preventDefault(); // Prevent form submission
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if ((username === 'a1' && password === 'aa') ||
+      (username === 'a2' && password === 'bb') ||
+      (username === 'a3' && password === 'cc') ||
+      (username === 'a4' && password === 'dd') ||
+      (username === 'a5' && password === 'ee')) {
+      alert('Вы успешно зашли в систему');
+      window.location.href = 'date13.html';
+  } else {
+      alert('Неверный логин и/или пароль');
+      window.location.href = 'index.html';
+  }
 }
